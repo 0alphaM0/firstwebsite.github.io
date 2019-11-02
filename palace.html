@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THE SHETTY'S PALACE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="yellow">
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="images/4.png" width="500px height="500" class="logo">
+				<ul class="nav  animated fadeInDownBig"  id="check">
+					<li><a href="">dog delivery</li>
+					<li><a href="">how to order</li>
+					<li><a href="">check more</li>
+					<li><a href="">sign up</li>
+				</ul>
+				<a href="#" class="icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+		<div class="main">
+		<h1><span class="change">WELCOME TO HEAVEN.<br>WHERE ALL CANT ENTER</span></h1>
+		<a href="" class="btn one">click to order</a>
+		<a href="" class="btn two">show me dog's</a>
+		</div>
+	</header>
+	<script type="text/javascript">
+		function slideshow() {
+			var x = document.getElementById('check');
+			if(x.style.display === "none"){
+				x.style.display="block";
+			}else{
+				x.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>

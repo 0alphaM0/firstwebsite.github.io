@@ -1,0 +1,127 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'flamenco';
+}
+body{
+	overflow-x: hidden;
+	font-size: 20px;
+	color: white;
+}
+header
+{
+	background-image:/* linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),*/url('../images/5.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+}
+.nav{
+	float: right; 	
+	margin-top: 60px;
+}
+.nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 60px
+}
+.nav li a{
+	padding: 5px 0px;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 80%;
+}
+.nav li a:hover{border-bottom: 1px solid #bf55ec}
+.main{
+	position: absolute;
+	width: 1180px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h1{
+	color: #fff;
+	font-size: 240%;
+	text-transform: uppercase;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s;border: 0.2s;color: 0.2s;
+}
+a{
+	text-decoration: none;
+}
+.one{
+	background-color: transparent;
+	margin-right: 15px;
+	color: #bf55ec;
+	border: 1px solid #bf55ec;
+}
+.one:hover{background-color: #fff}
+.two{
+	background-color: transparent;
+	color: #000;
+	border: 1px solid #000;
+}
+.two:hover{background-color: #bf55ec}
+.change{
+	animation: colorchangeheaven 1s infinite;
+}
+@keyframes colorchangeheaven{
+	0%{color: red}
+	25%{color: #bf55ec}
+	50%{color: #fff}
+	100%{color: #bf55ec}
+}
+.icon{display: none;}
+@media only screen and (max-width: 1180px){
+	.main{
+		width: 100%;
+		padding:0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%}
+	.nav{display: none;}
+	.icon{
+		display: inline-block;
+		color: #000;
+		float: right;
+	}
+	.nav li{
+		float: left;
+		display: block;
+		margin-top: 10px;
+
+	}
+}
